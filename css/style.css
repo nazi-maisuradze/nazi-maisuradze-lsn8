@@ -1,0 +1,83 @@
+
+
+.bg-image {
+    background-image: url(../img/360_F_311386731_Zl4dMbUUlQwRI91V8WlXNSKn2mzuY8yx.jpg);
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.starfish {
+    width: 100px;
+    height: 100px;
+    animation-name: starfish-move;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-timing-function: ease;
+    animation-timeline: auto;
+    left: 0px;
+    bottom: 50px;
+    }
+
+    .spangebob {
+        width: 100px;
+        height: 100px;
+        animation-name: spangebob-move;
+        animation-duration: 88;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        animation-timing-function: ease;
+        animation-timeline: auto;
+        left: 150px;
+        bottom: 150px;
+   }
+   .bird {
+    width: 100px;
+    height: 100px;
+    animation-name: bird-move;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-timing-function: ease;
+    animation-timeline: auto;
+    right: 10px;
+    top: 80px;
+   }
+   .patrick {
+    width: 100px;
+    height: 100px;
+    animation-name: patrick-move;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-timing-function: ease;
+    animation-timeline: auto;
+    right: 600px;
+    bottom: 150px;
+   }
+    
+@keyframes starfish-move {
+   from{left: 0; rotate: (130deg);} 
+   to {left: 600px; rotate:(360deg);}
+}
+@keyframes spangebob-move {
+    from {left:150px;}
+    to {left:300px;}
+}
+@keyframes bird-move {
+    from {right: 10px;}
+    to {right: 1500px;}
+}
+
+@keyframes patrick-move {
+    from {right: 600px;}
+    to{right: 700px;}
+}
